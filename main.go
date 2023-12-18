@@ -1,7 +1,10 @@
 package main
 
-import "time"
+import (
+	"math"
+)
 
 func main() {
-	print(time.Now().Unix())
+	const Size = math.MaxUint32
+	println(Size)
 }

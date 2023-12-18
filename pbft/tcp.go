@@ -20,6 +20,7 @@ func clientTcpListen() {
 		if err != nil {
 			log.Panic(err)
 		}
+		fmt.Println(conn.RemoteAddr())
 		b, err := ioutil.ReadAll(conn)
 		if err != nil {
 			log.Panic(err)
